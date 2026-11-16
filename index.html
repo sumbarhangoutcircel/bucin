@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>xRed & Zakiya — Our Everlasting Journey</title>
+  
+  <!-- Premium Google Fonts: Playfair Display, Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Background Mesh Glow Orbs -->
+  <div class="ambient-glow orb-1"></div>
+  <div class="ambient-glow orb-2"></div>
+  <div class="ambient-glow orb-3"></div>
+
+  <!-- ============================================================
+       TOP NAVIGATION BAR
+       ============================================================ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-symbol">✦</span>
+        <span class="logo-text" id="navBrandName">xRed & Zakiya</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#about" class="nav-link">Tentang Kita</a>
+        <a href="#milestones" class="nav-link">Linimasa</a>
+        <a href="#soundtrack" class="nav-link">Soundtrack</a>
+        <a href="#letter" class="nav-link">Surat</a>
+        <a href="#message" class="nav-link">Kirim Pesan</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Interactive Audio Pill -->
+        <button id="btnHeaderAudio" class="audio-pill-btn" title="Putar / Jeda Musik">
+          <div class="equalizer-bars" id="audioEqualizer">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <span class="audio-label" id="audioStatusText">Soundtrack</span>
+        </button>
+
+        <!-- Settings Modal Trigger -->
+        <button id="btnOpenSettings" class="icon-circle-btn" title="Pengaturan Portofolio">
+          <i class="fa-solid fa-sliders"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================================
+         SECTION 1: HERO (Cinematic Statement & Live Counter)
+         ============================================================ -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-kicker-badge">
+          <span class="kicker-dot"></span>
+          <span>A PRIVATE DIGITAL ARCHIVE & COMMITMENT</span>
+        </div>
+
+        <h1 class="hero-headline">
+          Dua Insan, Satu Cerita,<br>
+          <span class="gold-gradient-text">Dan Selamanya Bersama</span>
+        </h1>
+
+        <p class="hero-lead">
+          Setiap detik bersamamu adalah lembaran berharga yang tak lekang oleh waktu. Menghitung hari, merawat rasa, dan menatap masa depan dengan penuh ketulusan.
+        </p>
+
+        <!-- Live Relationship Milestone Counter Box -->
+        <div class="counter-milestone-panel">
+          <div class="panel-header">
+            <span class="panel-title"><i class="fa-solid fa-infinity"></i> WAKTU PERJALANAN KITA</span>
+            <span class="panel-date" id="heroAnniversaryDateDisplay">Baru 1 Hari Bersama</span>
+          </div>
+
+          <div class="time-grid-display">
+            <div class="time-card">
+              <span class="time-number" id="countDays">1</span>
+              <span class="time-unit">HARI</span>
+            </div>
+            <div class="time-sep">:</div>
+            <div class="time-card">
+              <span class="time-number" id="countHours">00</span>
+              <span class="time-unit">JAM</span>
+            </div>
+            <div class="time-sep">:</div>
+            <div class="time-card">
+              <span class="time-number" id="countMinutes">00</span>
+              <span class="time-unit">MENIT</span>
+            </div>
+            <div class="time-sep">:</div>
+            <div class="time-card">
+              <span class="time-number" id="countSeconds">00</span>
+              <span class="time-unit">DETIK</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#about" class="btn btn-primary">
+            Jelajahi Kisah Kita <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a href="#message" class="btn btn-secondary">
+            <i class="fa-brands fa-whatsapp"></i> Hubungi di WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 2: ABOUT THE COUPLE (Two Souls, One Vision)
+         ============================================================ -->
+    <section id="about" class="section-block">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">THE TWO OF US</span>
+          <h2 class="section-heading">Karakter & Cerita Kita</h2>
+          <p class="section-subtext">Dua kepribadian yang berbeda, disatukan oleh komitmen dan rasa saling menghargai.</p>
+        </div>
+
+        <div class="couple-profile-grid">
+          <!-- Profile 1: Him -->
+          <div class="profile-card">
+            <div class="profile-photo-box">
+              <img id="profileMaleImg" src="xred.jpg?v=2" alt="xRed">
+              <div class="photo-overlay-tag">The Protector 🛡️</div>
+            </div>
+            <div class="profile-info">
+              <h3 class="profile-name" id="profileMaleName">xRed</h3>
+              <span class="profile-role">Partner in Life</span>
+              
+              <ul class="profile-attributes">
+                <li>
+                  <span class="attr-label">Love Language:</span>
+                  <span class="attr-val">Acts of Service & Quality Time</span>
+                </li>
+                <li>
+                  <span class="attr-label">Hal Favorit:</span>
+                  <span class="attr-val">Melihat senyumanmu di penghujung hari</span>
+                </li>
+                <li>
+                  <span class="attr-label">Janji Tulus:</span>
+                  <span class="attr-val">Selalu ada dan mendampingi di setiap langkah</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Center Connection Emblem -->
+          <div class="connection-emblem">
+            <div class="emblem-circle">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <span class="emblem-text">SOULMATES</span>
+          </div>
+
+          <!-- Profile 2: Her -->
+          <div class="profile-card">
+            <div class="profile-photo-box">
+              <img class="person-photo-src" src="zakiya.jpg?v=2" alt="Zakiya">
+              <div class="photo-overlay-tag">The Sunshine ☀️</div>
+            </div>
+            <div class="profile-info">
+              <h3 class="profile-name" id="profileFemaleName">Zakiya</h3>
+              <span class="profile-role">The Muse & Everything</span>
+              
+              <ul class="profile-attributes">
+                <li>
+                  <span class="attr-label">Love Language:</span>
+                  <span class="attr-val">Words of Affirmation & Physical Touch</span>
+                </li>
+                <li>
+                  <span class="attr-label">Hal Favorit:</span>
+                  <span class="attr-val">Kopi hangat, obrolan larut malam, & pelukan</span>
+                </li>
+                <li>
+                  <span class="attr-label">Karakter Spesial:</span>
+                  <span class="attr-val">Tawa lepas yang selalu membawa kehangatan</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 3: MILESTONE TIMELINE (Chronological Story)
+         ============================================================ -->
+    <section id="milestones" class="section-block alt-bg">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">CHRONOLOGICAL ARCHIVE</span>
+          <h2 class="section-heading">Jejak Langkah Perjalanan</h2>
+          <p class="section-subtext">Momen-momen penting yang menjadi fondasi kisah indah kita berdua.</p>
+        </div>
+
+        <div class="timeline-roadmap">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-entry">
+            <div class="timeline-marker">01</div>
+            <div class="timeline-content-card">
+              <span class="entry-date">Awal Pertemuan</span>
+              <h3 class="entry-title">Pertama Kali Bersitatap</h3>
+              <p class="entry-desc">Sebuah perjumpaan tak terduga yang sederhana. Dari sapaan pertama dan percakapan santai, ada rasa nyaman yang belum pernah kurasakan sebelumnya.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-entry">
+            <div class="timeline-marker">02</div>
+            <div class="timeline-content-card">
+              <span class="entry-date">Kencan Pertama</span>
+              <h3 class="entry-title">Jalan Sore & Obrolan Panjang</h3>
+              <p class="entry-desc">Menikmati secangkir kopi berdua sambil saling bertukar cerita tentang masa kecil dan mimpi-mimpi besar. Waktu seakan berhenti berdetak saat bersamamu.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-entry">
+            <div class="timeline-marker">03</div>
+            <div class="timeline-content-card highlight-card">
+              <span class="entry-date">Hari Komitmen Resmi</span>
+              <h3 class="entry-title">Menyatukan Hati & Tujuan</h3>
+              <p class="entry-desc">Hari di mana kita berdua berjanji untuk saling menghargai, saling menjaga, dan menapaki suka duka kehidupan sebagai satu kesatuan yang utuh.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-entry">
+            <div class="timeline-marker">04</div>
+            <div class="timeline-content-card">
+              <span class="entry-date">Hari Ini & Selamanya</span>
+              <h3 class="entry-title">Menulis Bab Baru Setiap Hari</h3>
+              <p class="entry-desc">Kisah kita masih terus terukir. Belajar bertumbuh bersama, saling menguatkan di saat lelah, dan bersyukur atas kehadiran satu sama lain.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 4: OUR SOUNDTRACK (Spotify Player Edition)
+         ============================================================ -->
+    <section id="soundtrack" class="section-block alt-bg">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">OUR SPECIAL ANTHEM</span>
+          <h2 class="section-heading">Lagu Pengiring Cerita</h2>
+          <p class="section-subtext">Melodi yang selalu mengingatkan kita pada rasa nyaman dan komitmen saat bersama.</p>
+        </div>
+
+        <!-- SPOTIFY COMPONENT -->
+        <div class="spotify-card-container">
+          <!-- Spotify Header Bar -->
+          <div class="spotify-top-bar">
+            <div class="spotify-brand-meta">
+              <i class="fa-brands fa-spotify sp-logo-icon"></i>
+              <span class="sp-brand-text">Spotify</span>
+              <span class="sp-meta-sep">•</span>
+              <span class="sp-playlist-name">Memutar dari Playlist: <strong id="spPlaylistPartner">xRed & Zakiya Forever</strong></span>
+            </div>
+            <div class="spotify-now-status">
+              <span class="sp-pulse-dot" id="spPulseDot"></span>
+              <span id="spStatusBadge">READY TO PLAY</span>
+            </div>
+          </div>
+
+          <!-- Spotify Content Grid -->
+          <div class="spotify-body-grid">
+            <!-- Left Deck: Player & Album Cover -->
+            <div class="spotify-player-deck">
+              <div class="sp-cover-wrapper">
+                <img src="am_cover.jpg" alt="Arctic Monkeys - AM" class="sp-album-cover" id="spAlbumImg">
+                <div class="sp-cover-overlay-badge">
+                  <i class="fa-brands fa-spotify"></i>
+                </div>
+              </div>
+
+              <!-- Track Meta -->
+              <div class="sp-track-row">
+                <div class="sp-track-details">
+                  <h3 class="sp-track-name">I Wanna Be Yours</h3>
+                  <p class="sp-track-artist">Arctic Monkeys <span class="sp-album-dot">• AM (2013)</span></p>
+                </div>
+                <button type="button" class="sp-heart-toggle active" id="spHeartBtn" title="Disimpan ke Lagu Favorit">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+              </div>
+
+              <!-- Progress Bar -->
+              <div class="sp-scrub-row">
+                <span class="sp-time-num" id="spTimeCurrent">0:00</span>
+                <div class="sp-seek-rail" id="spSeekRail">
+                  <div class="sp-seek-progress" id="spSeekProgress">
+                    <span class="sp-seek-handle"></span>
+                  </div>
+                </div>
+                <span class="sp-time-num" id="spTimeTotal">3:04</span>
+              </div>
+
+              <!-- Controls -->
+              <div class="sp-controls-row">
+                <button type="button" class="sp-ctrl-btn" id="spBtnShuffle" title="Acak (Shuffle)">
+                  <i class="fa-solid fa-shuffle"></i>
+                </button>
+                <button type="button" class="sp-ctrl-btn" id="spBtnPrev" title="Mulai dari awal">
+                  <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button type="button" class="sp-play-circle" id="spBtnPlay" title="Putar Lagu">
+                  <i class="fa-solid fa-play" id="spPlayIcon"></i>
+                </button>
+                <button type="button" class="sp-ctrl-btn" id="spBtnNext" title="Maju 15 detik">
+                  <i class="fa-solid fa-forward-step"></i>
+                </button>
+                <button type="button" class="sp-ctrl-btn active" id="spBtnRepeat" title="Ulangi Lagu">
+                  <i class="fa-solid fa-repeat"></i>
+                  <span class="sp-dot-indicator"></span>
+                </button>
+              </div>
+
+              <!-- Device & Volume Controls -->
+              <div class="sp-footer-bar">
+                <div class="sp-device-pill">
+                  <i class="fa-solid fa-headphones"></i>
+                  <span>Terhubung: <strong>xRed & Zakiya Sound System</strong></span>
+                </div>
+                <div class="sp-volume-pill">
+                  <button type="button" class="sp-vol-btn" id="spVolMuteBtn">
+                    <i class="fa-solid fa-volume-high" id="spVolIcon"></i>
+                  </button>
+                  <input type="range" id="spVolSlider" min="0" max="1" step="0.01" value="0.85" class="sp-range-slider">
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Deck: Real-time Interactive Spotify Lyrics -->
+            <div class="spotify-lyrics-deck">
+              <div class="sp-lyrics-top">
+                <div class="sp-lyrics-title">
+                  <i class="fa-solid fa-microphone-lines"></i>
+                  <span>LIRIK LAGU (SPOTIFY KARAOKE)</span>
+                </div>
+                <span class="sp-lyrics-hint">Klik baris lirik untuk lompat lagu ✨</span>
+              </div>
+
+              <div class="sp-lyrics-container" id="spLyricsContainer">
+                <!-- Synchronized lines inserted by script.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hidden Native Audio Stream for Spotify Player -->
+        <audio id="spotifyAudioTrack" src="iwannabeyours.m4a" preload="auto" loop></audio>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 6: SPECIAL DEDICATION LETTER
+         ============================================================ -->
+    <section id="letter" class="section-block">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">DEDICATION</span>
+          <h2 class="section-heading">Surat Dari Lubuk Hati</h2>
+          <p class="section-subtext">Ungkapan rasa dan komitmen tulus yang kutuliskan khusus untukmu.</p>
+        </div>
+
+        <div class="luxury-letter-wrapper">
+          <article class="letter-document">
+            <div class="letter-seal-decor">
+              <i class="fa-solid fa-feather"></i>
+            </div>
+
+            <div class="letter-meta-head">
+              <span class="letter-recipient-label">UNTUK YANG TERCINTA</span>
+              <h3 class="letter-recipient-name" id="letterPartnerRecipient">Zakiya</h3>
+            </div>
+
+            <div class="letter-body-prose">
+              <p id="letterMainText">
+                "Terima kasih telah hadir dan menjadi bagian paling berharga dalam perjalananku. Bersamamu, hal-hal sederhana terasa begitu bermakna, dan hari-hari yang berat selalu terasa jauh lebih ringan. Aku bersyukur atas caramu tersenyum, caramu mendengarkan, dan caramu selalu mendukungku dalam keadaan apa pun. Semoga perjalanan ini terus kita tapaki bersama dengan rasa saling percaya, saling menjaga, dan saling mencintai dengan setulus hati. Selalu ada untukmu, kini dan seterusnya."
+              </p>
+            </div>
+
+            <div class="letter-signature-block">
+              <span class="closing-phrase">Dengan segenap ketulusan rasa,</span>
+              <span class="signature-handwritten" id="letterSenderSign">- xRed</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 7: DIRECT WHATSAPP CONNECT
+         ============================================================ -->
+    <section id="message" class="section-block alt-bg">
+      <div class="section-container narrow-container">
+        <div class="section-header">
+          <span class="section-eyebrow">DIRECT CONNECT</span>
+          <h2 class="section-heading">Kirim Pesan Sayang</h2>
+          <p class="section-subtext">Punya pesan balasan, ungkapan rasa, atau ajakan jalan? Kirimkan langsung ke nomor WhatsApp pribadiku.</p>
+        </div>
+
+        <div class="wa-interactive-box">
+          <div class="wa-card-topbar">
+            <div class="wa-icon-avatar">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="wa-target-details">
+              <h4>Pesan Langsung WhatsApp</h4>
+              <p>Terkirim otomatis ke: <strong id="displayTargetPhone">0895-2724-3318</strong></p>
+            </div>
+          </div>
+
+          <div class="quick-chip-container">
+            <label class="form-sublabel">Pilih template balasan cepat:</label>
+            <div class="chip-buttons-row">
+              <button type="button" class="template-chip">Makasih banyak ya sayang, web portofolio kita manis banget 💖</button>
+              <button type="button" class="template-chip">Aku bersyukur banget punya kamu di hidupku 🥰✨</button>
+              <button type="button" class="template-chip">I love you so much, yuk ketemu dan jalan bareng! ☕❤️</button>
+              <button type="button" class="template-chip">Selalu bangga dan bahagia ada di sampingmu 🫂</button>
+            </div>
+          </div>
+
+          <div class="wa-input-group">
+            <label for="waReplyText" class="form-sublabel">Atau tulis pesan personalmu:</label>
+            <textarea id="waReplyText" rows="4" placeholder="Tuliskan ungkapan hatimu di sini..."></textarea>
+          </div>
+
+          <button id="btnSendWaMessage" class="btn btn-whatsapp-send">
+            <i class="fa-brands fa-whatsapp"></i> Kirim Langsung ke WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-symbol">✦</div>
+      <p class="footer-tagline">Crafted with devotion for <strong id="footerPartnerName">Zakiya</strong></p>
+      <p class="footer-meta">xRed & Zakiya — A Digital Journey & Archive • All memories reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       MODAL: CUSTOMIZE / SETTINGS
+       ============================================================ -->
+  <div id="settingsModal" class="settings-modal">
+    <div class="settings-backdrop"></div>
+    <div class="settings-card">
+      <button id="btnCloseSettings" class="btn-close-modal">&times;</button>
+      <h2><i class="fa-solid fa-sliders"></i> Pengaturan Data Portofolio</h2>
+      <p class="settings-desc">Kustomisasi nama pasangan, tanggal komitmen, foto, dan isi surat sesuai kebutuhanmu.</p>
+
+      <form id="settingsForm">
+        <div class="form-group">
+          <label>Nama Pasangan Pria:</label>
+          <input type="text" id="cfgMaleName" value="xRed" required>
+        </div>
+
+        <div class="form-group">
+          <label>Foto Pasangan Pria (file / link):</label>
+          <input type="text" id="cfgMalePhoto" value="xred.jpg" required>
+        </div>
+
+        <div class="form-group">
+          <label>Nama Pasangan Wanita:</label>
+          <input type="text" id="cfgName" value="Zakiya" required>
+        </div>
+
+        <div class="form-group">
+          <label>Foto Pasangan Wanita (file / link):</label>
+          <input type="text" id="cfgPhoto" value="zakiya.jpg" required>
+        </div>
+
+        <div class="form-group">
+          <label>Nomor WhatsApp Penerima (Contoh: 089527243318):</label>
+          <input type="text" id="cfgPhone" value="089527243318" required>
+        </div>
+
+        <div class="form-group">
+          <label>Tanggal Mulai Jadian / Komitmen (YYYY-MM-DD):</label>
+          <input type="date" id="cfgDate" value="2026-11-15">
+        </div>
+
+        <div class="form-group">
+          <label>Isi Surat Cinta / Komitmen:</label>
+          <textarea id="cfgLetter" rows="4" required>"Terima kasih telah hadir dan menjadi bagian paling berharga dalam perjalananku. Bersamamu, hal-hal sederhana terasa begitu bermakna, dan hari-hari yang berat selalu terasa jauh lebih ringan. Aku bersyukur atas caramu tersenyum, caramu mendengarkan, dan caramu selalu mendukungku dalam keadaan apa pun. Semoga perjalanan ini terus kita tapaki bersama dengan rasa saling percaya, saling menjaga, dan saling mencintai dengan setulus hati. Selalu ada untukmu, kini dan seterusnya."</textarea>
+        </div>
+
+        <div class="settings-actions">
+          <button type="button" id="btnResetSettings" class="btn-reset">Reset ke Default</button>
+          <button type="submit" class="btn-save">Simpan Perubahan ✨</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
